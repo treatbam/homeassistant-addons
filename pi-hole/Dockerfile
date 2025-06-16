@@ -81,9 +81,9 @@ LABEL	io.hass.arch="${BUILD_ARCH}"
 LABEL	io.hass.type="addon"
 LABEL	io.hass.version="${VERSION}"
 
-LABEL	image="casperklein/homeassistant-pihole:${VERSION}"
-LABEL	maintainer="Casper Klein"
-LABEL	url="https://github.com/casperklein/homeassistant-addons/tree/master/pi-hole"
+LABEL	image="treatbam/pihole:${VERSION}"
+LABEL	maintainer="treatbam"
+LABEL	url="https://github.com/treatbam/homeassistant-addons/tree/master/pi-hole"
 
 # Disable Pi-hole authentication --> Single Sign On via HA Ingress
 ENV	FTLCONF_webserver_api_password=""
