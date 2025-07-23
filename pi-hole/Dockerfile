@@ -1,5 +1,5 @@
 # check=skip=SecretsUsedInArgOrEnv
-FROM	pihole/pihole:2025.06.2 AS pihole
+FROM	pihole/pihole:2025.05.1 AS pihole
 
 ARG	YQ_VERSION=v4.45.4
 ARG	SV_VERSION=0.4
@@ -86,7 +86,7 @@ LABEL	maintainer="treatbam"
 LABEL	url="https://github.com/treatbam/homeassistant-addons/tree/master/pi-hole"
 
 # Disable Pi-hole authentication --> Single Sign On via HA Ingress
-ENV	FTLCONF_webserver_api_password=""
+ENV	FTLCONF_webserver_api_password="238522"
 
 # Placeholder for HA Ingress token (required for substitution, see rootfs/etc/nginx/http.d/ingress-proxy.conf)
 ENV	FTLCONF_webserver_paths_prefix="/live-long-and-prosper"
